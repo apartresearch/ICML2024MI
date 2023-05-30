@@ -1,7 +1,8 @@
 /* Make styles for header so it centers the text and creates a min-height 300px background color. It should be centered horizontally and vertically */
 body {
   margin: 0;
-  font-family: sans-serif;
+  /* Use font Gothic A1 */
+  font-family: "Gothic A1", sans-serif;
   font-size: 1.2em;
   line-height: 1.5;
   color: hsl(0, 0%, 20%);
@@ -52,8 +53,8 @@ h1 {
 
 .speaker > img,
 .Organizer > img {
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
   margin-right: 20px;
   /* Cover the square */
   object-fit: cover;
