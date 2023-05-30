@@ -16,6 +16,10 @@ header {
   align-items: center;
   flex-direction: column;
   color: white;
+  /* Make the background into img/bg.jpeg and make it cover */
+  background-image: url("img/bg.jpeg");
+  background-size: cover;
+  background-position: center;
 }
 
 main {
@@ -45,7 +49,8 @@ h1 {
   margin-right: 20px;
 }
 
-.speaker {
+.speaker,
+.Organizer {
   display: flex;
   align-items: center;
   margin-bottom: 20px;
