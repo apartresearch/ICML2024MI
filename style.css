@@ -21,13 +21,13 @@ header {
   background-image: url("img/bg.jpeg");
   background-size: cover;
   background-position: center;
+  margin-bottom: 60px;
 }
 
 header > p {
   font-size: 0.8em;
   color: hsl(0, 0%, 80%);
   margin: 0;
-  margin-bottom: 60px;
 }
 
 main {
