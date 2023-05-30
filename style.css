@@ -44,6 +44,12 @@ h1 {
   margin: 0;
 }
 
+h2 {
+  font-size: 1.5em;
+  margin: 0;
+  color: hsl(210, 45%, 48%);
+}
+
 .speakers,
 .organizers {
   display: flex;
@@ -124,4 +130,8 @@ table.schedule td:nth-child(2) {
     opacity: 1;
     transform: translateY(0);
   }
-/* } */
+}
+
+section {
+  margin-bottom: 20px;
+}
