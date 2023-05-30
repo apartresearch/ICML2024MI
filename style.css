@@ -108,3 +108,19 @@ table.schedule td:nth-child(2) {
     width: 150px;
   }
 }
+
+/* Add animation to everything of fade-in from the bottom */
+.fade-in {
+  animation: fade-in 0.5s ease-in-out;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+/* } */
