@@ -37,16 +37,20 @@ h1 {
   margin: 0;
 }
 
-.speakers {
+.speakers,
+.organizers {
   display: flex;
   flex-wrap: wrap;
   justify-content: left;
 }
 
-.speaker > img {
+.speaker > img,
+.Organizer > img {
   width: 100px;
   height: 100px;
   margin-right: 20px;
+  /* Cover the square */
+  object-fit: cover;
 }
 
 .speaker,
@@ -55,14 +59,46 @@ h1 {
   align-items: center;
   margin-bottom: 20px;
   margin-right: 20px;
+  width: 40%;
 }
 
-.speaker > div > h3 {
+.speaker > div > h3,
+.Organizer > div > h3 {
   margin: 0;
 }
 
-.speaker > div > p {
+.speaker > div > p,
+.Organizer > div > p {
   margin: 0;
   font-size: 0.8em;
   color: hsl(0, 0%, 50%);
+}
+
+table.schedule {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table.schedule td {
+  padding: 10px;
+  border: 1px solid hsl(0, 0%, 80%);
+}
+
+table.schedule td:first-child {
+  width: 100px;
+  text-align: right;
+  font-weight: bold;
+  color: hsl(0, 0%, 50%);
+}
+
+table.schedule td:nth-child(2) {
+  width: 70%;
+  text-align: left;
+}
+
+/* Style for minimum width of first column of 100px */
+@media (min-width: 600px) {
+  table.schedule td:first-child {
+    width: 150px;
+  }
 }
