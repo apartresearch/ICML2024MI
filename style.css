@@ -27,6 +27,7 @@ header > p {
   font-size: 0.8em;
   color: hsl(0, 0%, 80%);
   margin: 0;
+  margin-bottom: 60px;
 }
 
 main {
@@ -36,7 +37,7 @@ main {
 section {
   max-width: 900px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 0px 20px;
 }
 
 h1 {
@@ -130,8 +131,4 @@ table.schedule td:nth-child(2) {
     opacity: 1;
     transform: translateY(0);
   }
-}
-
-section {
-  margin-bottom: 20px;
 }
