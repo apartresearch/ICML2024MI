@@ -22,6 +22,12 @@ header {
   background-position: center;
 }
 
+header > p {
+  font-size: 0.8em;
+  color: hsl(0, 0%, 80%);
+  margin: 0;
+}
+
 main {
   background-color: white;
 }
