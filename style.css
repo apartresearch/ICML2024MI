@@ -20,7 +20,8 @@ header {
   /* Make the background into img/bg.jpeg and make it cover */
   background-image: url("img/bg.png");
   background-size: cover;
-  background-position: center;
+  /* Make its position anchor top right */
+  background-position: top right;
   margin-bottom: 60px;
 }
 
