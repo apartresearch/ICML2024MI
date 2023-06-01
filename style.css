@@ -142,7 +142,7 @@ table.schedule td:nth-child(2) {
 }
 
 /* Make width of speakers and organizers full width if screen is smaller than 600px */
-@media (max-width: 600px) {
+@media (max-width: 900px) {
   .speakers,
   .organizers {
     width: 100%;
