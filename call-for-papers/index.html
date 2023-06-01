@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>NeurIPS 2023 Mechanistic Interpretability Workshop</title>
+
+    <!-- Setup all meta-information like description and titles -->
+    <meta
+      name="description"
+      content="The Workshop on Mechanistic Interpretability seeks to explore and drive discus-
+      sions on the latest advances in interpretable machine learning models. We invite submissions of
+      research, technological breakthroughs and demonstrations, as well as proposals for technical
+      discussions, to be held during the workshop."
+    />
+    <meta
+      name="keywords"
+      content="NeurIPS, Mechanistic Interpretability, Workshop"
+    />
+    <meta name="author" content="NeurIPS 2023 Mechanistic Interpretability" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Load fonts Gothic A1 -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Gothic+A1:400,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Load style.css -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header with a background color filling approx. 300px and that has a title of the workshop and the date as a byline -->
+    <header>
+      <h1 class="fade-in">NeurIPS Mechanistic Interpretability Workshop</h1>
+      <p class="fade-in">December 11th, 2023</p>
+    </header>
+    <!-- Content on white background with sections Overview, Schedule, Speakers and Organizing Committee -->
+    <main class="fade-in">
+      <section>
+        <h2>Overview</h2>
+        <p>
+          The workshop on Mechanistic Interpretability (MI) seeks to explore the dynamics of specific machine
+learning models and gain a better understanding of the mechanisms that determine their function.
+MI is more ambitious than classical Interpretability, in that the goal is to uncover and manipulate
+these mechanisms to refine machine learning models and for greater understanding of the functions
+and representations inside these models. 
+        </p>
+        <p>
+          Recent breakthroughs, such as the identification of the key-
+value-map nature of LM MLP layers, have opened up a world of opportunities for model editing and
+optimization. Research on Mechanistic Interpretability has grown in relevance with the emergence of
+large-scale language models and the use of jailbreaking and other creative techniques that demonstrate
+that previous ML techniques, such as RLHF, are unable to guarantee desired behaviors. 
+        </p>
+        <p>
+          The aim
+of Mechanistic Interpretability is to make ML models as reliable as traditionally coded software
+engineering and data structures, to enable the assembly of model building blocks with predictable
+results. Current work in this area includes reverse engineering transformers, model editing, and other
+work studying the inner workings of ML models. 
+        </p>
+        <p>
+          The aim of this workshop is to bring together
+experts and practitioners in the field of Mechanistic Interpretability to discuss and collaborate on their
+ideas, research and challenges. We hope to foster a rich dialogue about the challenges of developing
+principled approaches to understanding how these networks work and the challenges of deploying
+mechanistic interpretability in real-world applications. The workshop will involve talks from invited
+leading researchers and practitioners, as well as a panel discussion featuring experts in the field. We
+will hold talks from the pool of accepted papers as well as an open poster session, some encouraging
+discussion among attendees
+        </p>
+        <h2>Objectives</h2>
+        <ol>
+          <li>
+            To discuss the current state of Mechanistic Interpretability
+            research, including recent advances, applications and challenges;
+          </li>
+          <li>
+            To identify areas in which further research is needed to develop
+            methods for deriving meaningful insights from machine learning
+            models;
+          </li>
+          <li>
+            To leverage the expertise of those in attendance to propose novel
+            and innovative approaches to interpretability and promote research
+            collaboration.
+          </li>
+        </ol>  
+      </section>
+
+      <section>
+        <h2>Topics of interest</h2>
+        <ul>
+          <li>Reverse engineering neural networks</li>
+          <li>Methods for uncovering hidden signals and operations within a neural network</li>
+          <li>Representation learning approaches for augmenting interpretability</li>
+          <li>Graph-based models and methods for understanding neural networks</li>
+          <li>Data-driven approaches for exploring and understanding the internal structure of models</li>
+          <li>Tools and techniques for debugging and validating neural networks</li>
+          <li>Methods for identifying and correcting for misalignment and bias in ML models</li>
+          <li>Approaches for uncertainty estimation in LLMs</li>
+          <li>Safety considerations for interpreting ML models</li>
+          <li>Applications of interpretable ML models</li>
+          <li>Architectural designs that improve model interpretability</li>
+          <li>Analysis and methods for understanding training-dynamics of LLMs</li>
+          <li>Benchmarks and datasets for mechanistic interpretability</li>
+        </ul>
+      </section>
+      <section>
+        <h2>Speakers</h2>
+        <div class="speakers">
+          <div class="speaker">
+            <img src="img/chrisolah.jpeg" alt="Speaker" />
+            <div>
+              <h3>Chris Olah</h3>
+              <p>Anthropic</p>
+            </div>
+          </div>
+          <div class="speaker">
+            <img src="img/yonathanbelinkov.jpg" alt="Speaker" />
+            <div>
+              <h3>Yonathan Belinkov</h3>
+              <p>Technion IIT</p>
+            </div>
+          </div>
+          <div class="speaker">
+            <img src="img/jacobsteinhardt.png" alt="Speaker" />
+            <div>
+              <h3>Jacob Steinhardt</h3>
+              <p>UC Berkeley</p>
+            </div>
+          </div>
+          <div class="speaker">
+            <img src="img/davidbau.jpeg" alt="Speaker" />
+            <div>
+              <h3>David Bau</h3>
+              <p>Northeastern University</p>
+            </div>
+          </div>
+          <div class="speaker">
+            <img src="img/stellabiderman.jpeg" alt="Speaker" />
+            <div>
+              <h3>Stella Biderman</h3>
+              <p>EleutherAI</p>
+            </div>
+          </div>
+          <div class="speaker">
+            <img src="img/naomisaphra.jpeg" alt="Speaker" />
+            <div>
+              <h3>Naomi Saphra</h3>
+              <p>NYU</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <table class="schedule">
+        <tr>
+            <th>Time</th>
+            <th>Event</th>
+        </tr>
+        <tr>
+            <td>9:00 - 9:30</td>
+            <td>Registration and Welcome</td>
+        </tr>
+        <tr>
+            <td>9:30 - 10:00</td>
+            <td>Keynote 1: TBA</td>
+        </tr>
+        <tr>
+            <td>10:00 - 10:30</td>
+            <td>Keynote 2: TBA</td>
+        </tr>
+        <tr>
+            <td>10:30 - 11:00</td>
+            <td>Coffee Break and Poster Session 1</td>
+        </tr>
+        <tr>
+            <td>11:00 - 11:30</td>
+            <td>Keynote 3</td>
+        </tr>
+        <tr>
+            <td>11:30 - 12:00</td>
+            <td>Keynote 4</td>
+        </tr>
+        <tr>
+            <td>12:00 - 12:40</td>
+            <td>Lunch and Poster Session 2</td>
+        </tr>
+        <tr>
+            <td>12:40 - 13:10</td>
+            <td>Keynote 5</td>
+        </tr>
+        <tr>
+            <td>13:10 - 13:40</td>
+            <td>Keynote 6</td>
+        </tr>
+        <tr>
+            <td>13:40 - 14:40</td>
+            <td>Hands-on Tutorial 1: TBA</td>
+        </tr>
+        <tr>
+            <td>14:40 - 15:10</td>
+            <td>Coffee Break and Poster Session 3</td>
+        </tr>
+        <tr>
+            <td>15:10 - 16:10</td>
+            <td>Hands-on Tutorial 2: TBA</td>
+        </tr>
+        <tr>
+            <td>16:10 - 17:30</td>
+            <td>Panel Discussion</td>
+        </tr>
+        <tr>
+            <td>17:30 - 18:00</td>
+            <td>Spotlight Talks (3 talks, 10 min each)</td>
+        </tr>
+        <tr>
+            <td>18:00</td>
+            <td>Drinks, Chat and Social</td>
+        </tr>
+        </table>
+      </section>
+      <section>
+        <h2>Application process</h2>
+        <p>Evaluation of submissions will be based on the originality and novelty, the technical strength, and
+          relevance to the workshop topics. Notifications of acceptance will be sent to applicants by email in
+          September/November 2023.</p>
+      </section>
+      <section>
+        <h2>Submissions</h2>
+        <p>We are inviting submission of 4-page papers outlining new research and technical
+          demonstrations for consideration for presentation during the workshop. We also welcome proposals
+          for technical discussions to be held during the workshop
+          </p>
+      </section>
+      <section>
+        <h2>Organizing Committee</h2>
+        <div class="organizers">
+          <div class="Organizer">
+            <img src="img/fazlbarez.jpeg" alt="Speaker" />
+            <div>
+              <h3>Fazl Barez</h3>
+              <p>PhD Student Edinburgh/Oxford University</p>
+            </div>
+          </div>
+          <div class="Organizer">
+            <img src="img/morgeva.jpeg" alt="Organizer" />
+            <div>
+              <h3>Mor Geva</h3>
+              <p>Post-Doc Google</p>
+            </div>
+          </div>
+          <div class="Organizer">
+            <img src="img/lawrencechan.jpeg" alt="Organizer" />
+            <div>
+              <h3>Lawrence Chan</h3>
+              <p>PhD student UC Berkeley</p>
+            </div>
+          </div>
+          <div class="Organizer">
+            <img src="img/kayoyin.jpeg" alt="Organizer" />
+            <div>
+              <h3>Kayo Yin</h3>
+              <p>PhD student UC Berkeley</p>
+            </div>
+          </div>
+          <div class="Organizer">
+            <img src="img/neelnanda.jpeg" alt="Organizer" />
+            <div>
+              <h3>Neel Nanda</h3>
+              <p>Research Engineer DeepMind</p>
+            </div>
+            </div>
+            <div class="Organizer">
+              <img src="img/maxtegmark.webp" alt="Organizer" />
+              <div>
+                <h3>Max Tegmark</h3>
+                <p>Professor MIT</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <h2>Correspondence</h2>
+        <p>
+          <!-- Emails fazl@apartresearch.com -->
+          Email: <a href="mailto:fazl@robots.ox.ac.uk">fazl@robots.ox.ac.uk</a></p>
+          <p>
+Web page: <a href="https://fbarez.github.io">https://fbarez.github.io</a></p><p>
+Google scholar: <a href="https://scholar.google.com/citations?user=EAjpNIMAAAAJ&hl=en&oi=ao">https://scholar.google.com/citations?user=EAjpNIMAAAAJ&hl=en&
+oi=ao</a>
+        </p>
+        
+        <!-- Updated above with the links as actual links -->
+
+
+      </section>
+    </main>
+  </body>
+</html>
