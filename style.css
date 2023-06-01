@@ -20,17 +20,13 @@ a:hover {
 header {
   text-align: center;
   min-height: 300px;
-  background-color: hsl(210, 45%, 48%);
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   color: white;
   /* Make the background into img/bg.jpeg and make it cover */
-  background-image: url("img/bg.png");
-  background-size: cover;
-  /* Make its position anchor top right */
-  background-position: top right;
+  background: url("img/bg.png") no-repeat top right cover;
   margin-bottom: 60px;
   /* Make a background black color layer at 50%, overlapping the background image */
   background-color: hsla(0, 0%, 0%, 1);
