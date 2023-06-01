@@ -23,6 +23,8 @@ header {
   /* Make its position anchor top right */
   background-position: top right;
   margin-bottom: 60px;
+  /* Make a background black color layer at 50% */
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 header > p {
