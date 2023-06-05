@@ -54,7 +54,7 @@
           <a href="https://transformer-circuits.pub/2023/toy-double-descent/index.html">[Henighan et al., 2023]</a>, scaling laws <a href="https://arxiv.org/abs/2303.13506">[Michaud et al., 2023]</a>, and grokking <a href="https://arxiv.org/abs/2301.05217">[Nanda et al., 2023]</a>,
           <a href="https://arxiv.org/abs/2302.03025">[Chughtai et al., 2023]</a>. At the same time, neuroscientists have found parallels between the neurons
           recovered from vision models using mechanistic interpretability <a href="https://distill.pub/2020/circuits">[Cammarata et al.,
-          2020]</a> and neurons in mice [Ding et al., 2023] and primates [Willeke et al., 2023].</p>
+          2020]</a> and neurons in mice <a href="https://www.biorxiv.org/content/10.1101/2023.03.13.531369v1.full">[Ding et al., 2023]</a> and primates <a href="https://www.biorxiv.org/content/10.1101/2023.05.12.540591v1.abstract">[Willeke et al., 2023]</a>.</p>
           
           <p>Despite this progress, significant amounts of mechanistic interpretability work still occur in relative
           disparate circles – in particular, there seem to be relatively separate threads of work in industry and
@@ -71,31 +71,31 @@
         <ul>
             <li>What exactly do we mean when we talk about “features" that neural networks represent?
             What is the appropriate level of analysis for understanding model internals?</li>
-            <li>Many recent papers have suggested different metrics and techniques for validating mechanistic interpretations [Cammarata et al., 2020, Geiger et al., 2021, Wang et al., 2022, Chan
-            et al., 2022]. What are the advantages and disadvantages of these metrics, and which
+            <li>Many recent papers have suggested different metrics and techniques for validating mechanistic interpretations [<a href="https://distill.pub/2020/circuits">Cammarata et al., 2020</a>, <a href="https://proceedings.neurips.cc/paper/2021/hash/4f5c422f4d49a5a807eda27434231040-Abstract.html">Geiger et al., 2021</a>, <a href="https://arxiv.org/abs/2211.00593">Wang et al., 2022</a>, <a href="https://www.alignmentforum.org/posts/JvZhhzycHu2Yd57RN/causal-scrubbing-a-method-for-rigorously-testing">Chan
+            et al., 2022</a>]. What are the advantages and disadvantages of these metrics, and which
             metrics should the field use going forward? How do we avoid spurious explanations or
-            “interpretability illusions" [Bolukbasi et al., 2021]?</li>
-            <li>Neural networks seem to represent more features in superposition [Elhage et al., 2022,
-            Gurnee et al., 2023] than they have dimensions, which poses a significant challenge for
+            “interpretability illusions" <a href="https://arxiv.org/abs/2104.07143">[Bolukbasi et al., 2021]</a>?</li>
+            <li>Neural networks seem to represent more features in superposition [<a href="https://transformer-circuits.pub/2022/toy\_model/index.html">Elhage et al., 2022</a>,
+            <a href="https://arxiv.org/abs/2305.01610">Gurnee et al., 2023</a>] than they have dimensions, which poses a significant challenge for
             identifying what features particular subcomponents are representing. How much of a
             challenge does superposition pose for various approaches to mechanistic interpretability?
             What are approaches that allow us to address or circumvent this challenge?</li>
             <li>Techniques from mechanistic interpretability have been used to identify and edit behavior
-            inside of neural networks [Meng et al., 2022, Turner et al., 2023]. However, other recent
+            inside of neural networks [<a href="https://arxiv.org/abs/2202.05262">Meng et al., 2022</a>, <a href="https://www.alignmentforum.org/posts/5spBue2z2tw4JuDCx/steering-gpt-2-xl-by-adding-an-activation-vector">Turner et al., 2023</a>]. However, other recent
             work has suggested that these edits often have unintended side effects, especially on larger
-            models [Hoelscher-Obermaier et al., 2023]. How can we refine localization and editing
+            models <a href="https://specificityplus.apartresearch.com"></a>[Hoelscher-Obermaier et al., 2023]</a>. How can we refine localization and editing
             behavior in more specific and scalable methods?</li>
             <li>There are several related techniques on how to corrupt internal activations inside neural
-            networks to study their internal structure, such as interchange interventions [Geiger et al.,
-            2021], causal tracing [Meng et al., 2022], path patching [Wang et al., 2022, Goldowsky-Dill
-            et al., 2023], and causal scrubbing [Chan et al., 2022]. How are these techniques related,
+            networks to study their internal structure, such as interchange interventions <a href="https://proceedings.neurips.cc/paper/2021/hash/4f5c422f4d49a5a807eda27434231040-Abstract.html">[Geiger et al.,
+            2021]</a>, causal tracing <a href="https://arxiv.org/abs/2202.05262">[Meng et al., 2022]</a>, path patching [<a href="https://arxiv.org/abs/2211.00593">Wang et al., 2022</a>, <a href="https://arxiv.org/abs/2304.05969">Goldowsky-Dill
+            et al., 2023</a>], and causal scrubbing <a href="https://www.alignmentforum.org/posts/JvZhhzycHu2Yd57RN/causal-scrubbing-a-method-for-rigorously-testing">[Chan et al., 2022]</a>. How are these techniques related,
             what trade-offs do they make, and what techniques should the field use going forward?</li>
             <li>Many approaches for generating mechanistic explanations are very labor intensive, leading
-            to interest in automated mechanistic interpretability Foote et al. [2023], Bills et al. [2023],
-            Conmy et al. [2023]. How can we develop more scalable, efficient techniques for interpreting
+            to interest in automated mechanistic interpretability <a href="https://n2g.apartresearch.com">Foote et al. [2023]</a>, <a href="https://openaipublic.blob.core.windows.net/neuron-explainer/paper/index.html">Bills et al. [2023]</a>,
+            <a href="https://arxiv.org/abs/2304.14997">Conmy et al. [2023]</a>. How can we develop more scalable, efficient techniques for interpreting
             ever larger and more complicated models?</li>
-            <li>A significant contributor to the rapid growth of the field is the availability of introductory materials, open-sourced code, and easy-to-use software packages (for example, Nanda [2022]
-            or Lindner et al. [2023]), which makes it easier for new researchers to begin to contribute
+            <li>A significant contributor to the rapid growth of the field is the availability of introductory materials, open-sourced code, and easy-to-use software packages (for example, <a href="https://github.com/neelnanda-io/TransformerLens">Nanda [2022]</a>
+            or <a href="https://arxiv.org/abs/2301.05062">Lindner et al. [2023]</a>), which makes it easier for new researchers to begin to contribute
             to the field. How can the field continue to foster this beginner-friendly environment going
             forward?</li>
             <li>Mechanistic interpretability is sometimes analogized to the neuroscience of machine learning
@@ -103,7 +103,7 @@
         </ul>
     
         <p>Besides panel discussions, invited talks, and a poster session, we also plan on running a hands-on
-        tutorial exploring newer results in the field on Nanda [2022]’s TransformerLens package.</p>
+        tutorial exploring newer results in the field on <a href="https://github.com/neelnanda-io/TransformerLens">Nanda [2022]'s</a> TransformerLens package.</p>
       </section>
       <section>
         <h2>Invited Speakers</h2>
