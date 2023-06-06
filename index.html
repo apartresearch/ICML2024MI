@@ -49,12 +49,11 @@
           
           <p>In the past two years, the subfield has seen rapid progress, despite its inherent challenge. For example,
           researchers have used newly developed mechanistic interpretability techniques to recover how large
-          language models implement particular behaviors [<a href="https://proceedings.neurips.cc/paper/2021/hash/4f5c422f4d49a5a807eda27434231040-Abstract.html">Geiger et al., 2021</a>, <a href="https://arxiv.org/abs/2211.00593">Wang et al., 2022]</a>, <a href="https://arxiv.org/abs/2209.11895">Olsson et al.,
-          2022</a>, <a href="https://arxiv.org/abs/2304.14767">Geva et al., 2023</a>, <a href="https://arxiv.org/abs/2305.00586">Hanna et al., 2023</a>] and explain various puzzles such as double descent
-          <a href="https://transformer-circuits.pub/2023/toy-double-descent/index.html">[Henighan et al., 2023]</a>, scaling laws <a href="https://arxiv.org/abs/2303.13506">[Michaud et al., 2023]</a>, and grokking [<a href="https://arxiv.org/abs/2301.05217">Nanda et al., 2023</a>,
+          language models implement particular behaviors [<a href="https://proceedings.neurips.cc/paper/2021/hash/4f5c422f4d49a5a807eda27434231040-Abstract.html">Geiger et al., 2021</a>, <a href="https://arxiv.org/abs/2211.00593">Wang et al., 2022</a>, <a href="https://arxiv.org/abs/2209.11895">Olsson et al.,
+          2022</a>, <a href="https://arxiv.org/abs/2304.14767">Geva et al., 2023</a>, <a href="https://arxiv.org/abs/2305.00586">Hanna et al., 2023</a>] and explain various puzzles such as double descent [<a href="https://transformer-circuits.pub/2023/toy-double-descent/index.html">Henighan et al., 2023</a>], scaling laws [<a href="https://arxiv.org/abs/2303.13506">Michaud et al., 2023</a>], and grokking [<a href="https://arxiv.org/abs/2301.05217">Nanda et al., 2023</a>,
           <a href="https://arxiv.org/abs/2302.03025">Chughtai et al., 2023</a>]. At the same time, neuroscientists have found parallels between the neurons
-          recovered from vision models using mechanistic interpretability <a href="https://distill.pub/2020/circuits">[Cammarata et al.,
-          2020]</a> and neurons in mice <a href="https://www.biorxiv.org/content/10.1101/2023.03.13.531369v1.full">[Ding et al., 2023]</a> and primates <a href="https://www.biorxiv.org/content/10.1101/2023.05.12.540591v1.abstract">[Willeke et al., 2023]</a>.</p>
+          recovered from vision models using mechanistic interpretability [<a href="https://distill.pub/2020/circuits">Cammarata et al.,
+          2020</a>] and neurons in mice [<a href="https://www.biorxiv.org/content/10.1101/2023.03.13.531369v1.full">Ding et al., 2023</a>] and primates [<a href="https://www.biorxiv.org/content/10.1101/2023.05.12.540591v1.abstract">Willeke et al., 2023</a>].</p>
           
           <p>Despite this progress, significant amounts of mechanistic interpretability work still occur in relative
           disparate circles – in particular, there seem to be relatively separate threads of work in industry and
@@ -72,7 +71,7 @@
             <li>Many recent papers have suggested different metrics and techniques for validating mechanistic interpretations [<a href="https://distill.pub/2020/circuits">Cammarata et al., 2020</a>, <a href="https://proceedings.neurips.cc/paper/2021/hash/4f5c422f4d49a5a807eda27434231040-Abstract.html">Geiger et al., 2021</a>, <a href="https://arxiv.org/abs/2211.00593">Wang et al., 2022</a>, <a href="https://www.alignmentforum.org/posts/JvZhhzycHu2Yd57RN/causal-scrubbing-a-method-for-rigorously-testing">Chan
             et al., 2022</a>]. What are the advantages and disadvantages of these metrics, and which
             metrics should the field use going forward? How do we avoid spurious explanations or
-            “interpretability illusions" <a href="https://arxiv.org/abs/2104.07143">[Bolukbasi et al., 2021]</a>?</li>
+            “interpretability illusions" [<a href="https://arxiv.org/abs/2104.07143">Bolukbasi et al., 2021</a>]?</li>
             <li>Neural networks seem to represent more features in superposition [<a href="https://transformer-circuits.pub/2022/toy\_model/index.html">Elhage et al., 2022</a>,
             <a href="https://arxiv.org/abs/2305.01610">Gurnee et al., 2023</a>] than they have dimensions, which poses a significant challenge for
             identifying what features particular subcomponents are representing. How much of a
@@ -81,16 +80,16 @@
             <li>Techniques from mechanistic interpretability have been used to identify and edit behavior
             inside of neural networks [<a href="https://arxiv.org/abs/2202.05262">Meng et al., 2022</a>, <a href="https://www.alignmentforum.org/posts/5spBue2z2tw4JuDCx/steering-gpt-2-xl-by-adding-an-activation-vector">Turner et al., 2023</a>]. However, other recent
             work has suggested that these edits often have unintended side effects, especially on larger
-            models <a href="https://arxiv.org/abs/2305.17553">[Hoelscher-Obermaier et al., 2023]</a>. How can we refine localization and editing
+            models [<a href="https://arxiv.org/abs/2305.17553">Hoelscher-Obermaier et al., 2023</a>]. How can we refine localization and editing
             behavior in more specific and scalable methods?</li>
             <li>There are several related techniques on how to corrupt internal activations inside neural
-            networks to study their internal structure, such as interchange interventions <a href="https://proceedings.neurips.cc/paper/2021/hash/4f5c422f4d49a5a807eda27434231040-Abstract.html">[Geiger et al.,
-            2021]</a>, causal tracing <a href="https://arxiv.org/abs/2202.05262">[Meng et al., 2022]</a>, path patching [<a href="https://arxiv.org/abs/2211.00593">Wang et al., 2022</a>, <a href="https://arxiv.org/abs/2304.05969">Goldowsky-Dill
-            et al., 2023</a>], and causal scrubbing <a href="https://www.alignmentforum.org/posts/JvZhhzycHu2Yd57RN/causal-scrubbing-a-method-for-rigorously-testing">[Chan et al., 2022]</a>. How are these techniques related,
+            networks to study their internal structure, such as interchange interventions [<a href="https://proceedings.neurips.cc/paper/2021/hash/4f5c422f4d49a5a807eda27434231040-Abstract.html">Geiger et al.,
+            2021</a>], causal tracing [<a href="https://arxiv.org/abs/2202.05262">Meng et al., 2022</a>], path patching [<a href="https://arxiv.org/abs/2211.00593">Wang et al., 2022</a>, <a href="https://arxiv.org/abs/2304.05969">Goldowsky-Dill
+            et al., 2023</a>], and causal scrubbing [<a href="https://www.alignmentforum.org/posts/JvZhhzycHu2Yd57RN/causal-scrubbing-a-method-for-rigorously-testing">Chan et al., 2022</a>]. How are these techniques related,
             what trade-offs do they make, and what techniques should the field use going forward?</li>
             <li>Many approaches for generating mechanistic explanations are very labor intensive, leading
-            to interest in automated mechanistic interpretability <a href="https://arxiv.org/abs/2304.12918">Foote et al. [2023]</a>, <a href="https://openaipublic.blob.core.windows.net/neuron-explainer/paper/index.html">Bills et al. [2023]</a>,
-            <a href="https://arxiv.org/abs/2304.14997">Conmy et al. [2023]</a>. How can we develop more scalable, efficient techniques for interpreting
+            to interest in automated mechanistic interpretability [<a href="https://arxiv.org/abs/2304.12918">Foote et al., 2023</a>, <a href="https://openaipublic.blob.core.windows.net/neuron-explainer/paper/index.html">Bills et al., 2023</a>,
+            <a href="https://arxiv.org/abs/2304.14997">Conmy et al., 2023</a>]. How can we develop more scalable, efficient techniques for interpreting
             ever larger and more complicated models?</li>
             <li>A significant contributor to the rapid growth of the field is the availability of introductory materials, open-sourced code, and easy-to-use software packages (for example, <a href="https://github.com/neelnanda-io/TransformerLens">Nanda [2022]</a>
             or <a href="https://arxiv.org/abs/2301.05062">Lindner et al. [2023]</a>), which makes it easier for new researchers to begin to contribute
