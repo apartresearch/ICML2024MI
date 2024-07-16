@@ -1,253 +1,469 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>ICML 2024 Mechanistic Interpretability Workshop</title>
 
-    <!-- Setup all meta-information like description and titles -->
-    <meta
-      name="description"
-      content="The Workshop on Mechanistic Interpretability seeks to explore and drive discussions on the latest advances in interpretable machine learning models. We invite submissions of
+<head>
+  <meta charset="UTF-8" />
+  <title>ICML 2024 Mechanistic Interpretability Workshop</title>
+
+  <!-- Setup all meta-information like description and titles -->
+  <meta name="description" content="The Workshop on Mechanistic Interpretability seeks to explore and drive discussions on the latest advances in interpretable machine learning models. We invite submissions of
       research, technological breakthroughs and demonstrations, as well as proposals for technical
-      discussions, to be held during the workshop."
-    />
-    <meta
-      name="keywords"
-      content="ICML, Mechanistic Interpretability, Workshop"
-    />
-    <meta name="author" content="ICML 2024 Mechanistic Interpretability" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      discussions, to be held during the workshop." />
+  <meta name="keywords" content="ICML, Mechanistic Interpretability, Workshop" />
+  <meta name="author" content="ICML 2024 Mechanistic Interpretability" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Load fonts Gothic A1 -->
-    <link
-      href="https://fonts.googleapis.com/css?family=Gothic+A1:400,700&display=swap"
-      rel="stylesheet"
-    />
+  <!-- Load fonts Gothic A1 -->
+  <link href="https://fonts.googleapis.com/css?family=Gothic+A1:400,700&display=swap" rel="stylesheet" />
 
-    <!-- Load style.css -->
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <!-- Header with a background color filling approx. 300px and that has a title of the workshop and the date as a byline -->
-    <header>
-      <h1 class="fade-in">Mechanistic Interpretability Workshop 2024</h1>
-      <!-- make the next one white text -->
-      <h2 class="fade-in" style="color: white;">ICML 2024 In-Person Workshop, Vienna</h2>
-      <h2 class="fade-in" style="color: white;">July 27, 2024</h2>
-      <p class="fade-in"></p>
-    </header>
-    <!-- Content on white background with sections Overview, Schedule, Speakers and Organizing Committee -->
-    <main class="fade-in">
-      <section>
-        <p> This is a 1 day workshop at ICML on mechanistic interpretability, held on July 27th in the ICML venue at Messe Wien Exhibition Congress Center, Vienna, Austria. We invite  <a href="https://openreview.net/group?id=ICML.cc/2024/Workshop/MI">submissions</a> of short (4-pages) and long (8-pages) papers outlining new research in mechanistic interpretability, due May 29th 2024 AoE. <p>
+  <!-- Load style.css -->
+  <link rel="stylesheet" href="style.css" />
+</head>
 
-        <!-- <h2>Introduction</h2> -->
-        <p>Even though ever larger and more capable machine learning models are being deployed in real-world settings, we still know concerningly little about how they implement their many impressive capabilities. This in turn can make it difficult to rely on these models in high-stakes situations, or to reason about or address cases where said models exhibit undesirable behavior. </p>
-        One emerging approach for understanding the internals of neural networks is mechanistic interpretability: reverse engineering the algorithms implemented by neural networks into human-understandable mechanisms, often by examining the weights and activations of neural networks to identify circuits[<a href="https://distill.pub/2020/circuits">Cammarata et al., 2020</a>, <a href="https://transformer-circuits.pub/2021/framework/index.html">Elhage et al., 2021</a>] that implement particular behaviors.</p>
-          
-          <p>Though this is an ambitious goal, in the past two years, mechanistic interpretability has seen rapid progress. For example, researchers have used newly developed mechanistic interpretability techniques to recover how large language models implement particular behaviors [for example, <a href="https://proceedings.ICLR.cc/paper/2021/hash/4f5c422f4d49a5a807eda27434231040-Abstract.html">Geiger et al., 2021</a>, <a href="https://arxiv.org/abs/2211.00593">Wang et al., 2022</a>, <a href="https://arxiv.org/abs/2209.11895">Olsson et al.,
-          2022</a>, <a href="https://arxiv.org/abs/2304.14767">Geva et al., 2023</a>, <a href="https://arxiv.org/abs/2305.00586">Hanna et al., 2023</a>, <a href="https://arxiv.org/pdf/2310.13121"> Quirke and Barez, 2024</a>], illuminated various puzzles such as double descent [<a href="https://transformer-circuits.pub/2023/toy-double-descent/index.html">Henighan et al., 2023</a>], scaling laws [<a href="https://arxiv.org/abs/2303.13506">Michaud et al., 2023</a>], and grokking [<a href="https://arxiv.org/abs/2301.05217">Nanda et al., 2023</a>], and explored phenomena such as superposition [<a href="https://transformer-circuits.pub/2022/toy_model/index.html">Elhage et al., 2022</a>, <a href="https://arxiv.org/abs/2305.01610">Gurnee et al., 2023</a>, <a href="https://transformer-circuits.pub/2023/monosemantic-features/index.html">Bricken et al., 2023</a>] that may be fundamental principles of how models work. Despite this progress, significant amounts of mechanistic interpretability work still occur in relatively disparate circles – there seem to be relatively separate threads of work in industry and academia that each use their own (slightly different) notation and terminology.</p>
+<body>
+  <!-- Header with a background color filling approx. 300px and that has a title of the workshop and the date as a byline -->
+  <header>
+    <h1 class="fade-in">Mechanistic Interpretability Workshop 2024</h1>
+    <!-- make the next one white text -->
+    <h2 class="fade-in" style="color: white;">ICML 2024 In-Person Workshop, Vienna</h2>
+    <h2 class="fade-in" style="color: white;">July 27, 2024</h2>
+    <p class="fade-in"></p>
+  </header>
+  <!-- Content on white background with sections Overview, Schedule, Speakers and Organizing Committee -->
+  <main class="fade-in">
+    <section>
+      <p> This is a 1 day workshop at ICML on mechanistic interpretability, held on July 27th in the ICML venue at Messe
+        Wien Exhibition Congress Center, Vienna, Austria. You can see our 93 accepted papers, showcasing the latest
+        mechanistic interpretability research, <a
+          href="https://openreview.net/group?id=ICML.cc/2024/Workshop/MI&referrer=%5BHomepage%5D(%2F)#tab-accept-oral">here</a>!
+        Apply for our evening social <a
+          href="https://docs.google.com/forms/d/e/1FAIpQLSf6EHr8JQu8NHNG1XNYoxfqyjeg89qSVYtpkg_gYbXQ8nSYJg/viewform">here</a>.
+      <p>
+    </section>
+    <section>
+      <h2 id="schedule">Schedule</h2>
+      <table>
+        <colgroup>
+          <col style="width: 150px;">
+          <col style="width: 350px;">
+        </colgroup>
+        <tr>
+          <th>Time</th>
+          <th>Event</th>
+        </tr>
+        <tr>
+          <td>09:00 - 09:30</td>
+          <td>Welcome + Talk 1: David Bau</td>
+        </tr>
+        <tr>
+          <td>09:30 - 10:30</td>
+          <td>Orals</td>
+        </tr>
+        <tr>
+          <td>10:30 - 11:00</td>
+          <td>Spotlights 1</td>
+        </tr>
+        <tr>
+          <td>11:00 - 12:00</td>
+          <td>Posters 1</td>
+        </tr>
+        <tr>
+          <td>12:00 - 13:00</td>
+          <td>Panel Discussion</td>
+        </tr>
+        <tr>
+          <td>13:00 - 14:00</td>
+          <td>Lunch</td>
+        </tr>
+        <tr>
+          <td>14:00 - 14:30</td>
+          <td>Spotlights 2</td>
+        </tr>
+        <tr>
+          <td>14:30 - 15:30</td>
+          <td>Posters 2</td>
+        </tr>
+        <tr>
+          <td>15:30 - 16:00</td>
+          <td>Coffee Break</td>
+        </tr>
+        <tr>
+          <td>16:00 - 16:30</td>
+          <td>Talk 2: Asma Ghandeharioun</td>
+        </tr>
+        <tr>
+          <td>16:30 - 17:00</td>
+          <td>Talk 3: Chris Olah</td>
+        </tr>
+        <tr>
+          <td>18:30 - late</td>
+          <td>Invite-only evening social (<a
+              href="https://docs.google.com/forms/d/e/1FAIpQLSf6EHr8JQu8NHNG1XNYoxfqyjeg89qSVYtpkg_gYbXQ8nSYJg/viewform">apply
+              here</a>)</td>
+        </tr>
+      </table>
+    </section>
+    <section>
+      <h2>Introduction</h2>
+      <p>Even though ever larger and more capable machine learning models are being deployed in real-world settings, we
+        still know concerningly little about how they implement their many impressive capabilities. This in turn can
+        make it difficult to rely on these models in high-stakes situations, or to reason about or address cases where
+        said models exhibit undesirable behavior. </p>
+      One emerging approach for understanding the internals of neural networks is mechanistic interpretability: reverse
+      engineering the algorithms implemented by neural networks into human-understandable mechanisms, often by examining
+      the weights and activations of neural networks to identify circuits[<a
+        href="https://distill.pub/2020/circuits">Cammarata et al., 2020</a>, <a
+        href="https://transformer-circuits.pub/2021/framework/index.html">Elhage et al., 2021</a>] that implement
+      particular behaviors.</p>
 
-          
-          <p>This workshop aims to bring together researchers from both industry and academia to discuss recent progress, address the challenges faced by this field, and clarify future goals, use cases, and agendas. We believe that this workshop can help foster a rich dialogue between researchers with a wide variety of backgrounds and ideas, which in turn will help researchers develop a deeper understanding of how machine learning systems work in practice.
-          </p>
+      <p>Though this is an ambitious goal, in the past two years, mechanistic interpretability has seen rapid progress.
+        For example, researchers have used newly developed mechanistic interpretability techniques to recover how large
+        language models implement particular behaviors [for example, <a
+          href="https://proceedings.ICLR.cc/paper/2021/hash/4f5c422f4d49a5a807eda27434231040-Abstract.html">Geiger et
+          al., 2021</a>, <a href="https://arxiv.org/abs/2211.00593">Wang et al., 2022</a>, <a
+          href="https://arxiv.org/abs/2209.11895">Olsson et al.,
+          2022</a>, <a href="https://arxiv.org/abs/2304.14767">Geva et al., 2023</a>, <a
+          href="https://arxiv.org/abs/2305.00586">Hanna et al., 2023</a>, <a href="https://arxiv.org/pdf/2310.13121">
+          Quirke and Barez, 2024</a>], illuminated various puzzles such as double descent [<a
+          href="https://transformer-circuits.pub/2023/toy-double-descent/index.html">Henighan et al., 2023</a>], scaling
+        laws [<a href="https://arxiv.org/abs/2303.13506">Michaud et al., 2023</a>], and grokking [<a
+          href="https://arxiv.org/abs/2301.05217">Nanda et al., 2023</a>], and explored phenomena such as superposition
+        [<a href="https://transformer-circuits.pub/2022/toy_model/index.html">Elhage et al., 2022</a>, <a
+          href="https://arxiv.org/abs/2305.01610">Gurnee et al., 2023</a>, <a
+          href="https://transformer-circuits.pub/2023/monosemantic-features/index.html">Bricken et al., 2023</a>] that
+        may be fundamental principles of how models work. Despite this progress, significant amounts of mechanistic
+        interpretability work still occur in relatively disparate circles – there seem to be relatively separate threads
+        of work in industry and academia that each use their own (slightly different) notation and terminology.</p>
+
+
+      <p>This workshop aims to bring together researchers from both industry and academia to discuss recent progress,
+        address the challenges faced by this field, and clarify future goals, use cases, and agendas. We believe that
+        this workshop can help foster a rich dialogue between researchers with a wide variety of backgrounds and ideas,
+        which in turn will help researchers develop a deeper understanding of how machine learning systems work in
+        practice.
+      </p>
       </p>
     </section>
-      <section>
-        <h2>Call for Papers</h2>
-        <p>We are inviting submissions of short (4 pages) and long (8 pages) papers outlining new research, with a deadline of May 29th 2024. We welcome papers on any of the following topics (see the Topics for Discussion section for more details and example papers), or anything else where the authors convincingly argue that it moves forward the field of mechanistic interpretability.</p>
-        <ul>
-<li><b>Techniques:</b> Work inventing new mechanistic interpretability techniques, evaluating the quality of existing techniques, or proposing benchmarks and tools for future evaluations.</li>
-<li><b>Exploratory analysis:</b>Qualitative, biologically-inspired analysis of components, circuits or phenomena inside neural networks.</li>
-<li><b>Decoding superposition:</b> Work that deepens our understanding of the hypothesis that models activations are represented in superposition, and explores techniques to decode superposed activations, such as sparse autoencoders. </li>
-<li><b>Applications of interpretability:</b> Can we study jailbreaks/hallucinations/other interesting real-world phenomena of LLMs? Where are places where mech interp provides value, in a fair comparison with e.g. linear probing or finetuning baselines?</li>
-<li><b>Scaling and automation:</b> How can we reduce the dependence of mechanistic interpretability on slow, subjective and expensive human labor? How much do our current techniques scale?</li>
-<li><b>Basic science:</b> There are many fundamental mysteries of model internals, and we welcome work that can shed any light on them: Are activations sparse linear combinations of features? Are features universal? Are circuits and features even the right way to think about models? </li>
-</ul>
-<p>We also welcome work that furthers the field of mechanistic interpretability in less standard ways, such as by providing rigorous negative results, or open source software (e.g. <a href="https://github.com/neelnanda-io/TransformerLens">TransformerLens</a>, <a href="https://github.com/stanfordnlp/pyvene/tree/main">pyvene</a>, <a href="https://github.com/ndif-team/nnsight">nnsight</a> or <a href="https://github.com/google-deepmind/penzai">Penzai</a>), models or datasets that may be of value to the community (e.g. <a href="https://arxiv.org/abs/2304.01373">Pythia</a>, <a href="https://arxiv.org/abs/2106.16163">MultiBERTs</a> or <a href="https://www.alignmentforum.org/posts/f9EgfLSurAiqRJySD/open-source-sparse-autoencoders-for-all-residual-stream">open source sparse autoencoders</a>), coding tutorials (e.g. <a href="https://arena3-chapter1-transformer-interp.streamlit.app/">the ARENA materials</a>), <a href="https://distill.pub/2017/research-debt/">distillations of key and poorly explained concepts</a> (e.g. <a href="https://transformer-circuits.pub/2021/framework/index.html">Elhage et al., 2021</a>), or position pieces discussing future use cases of mechanistic interpretability or that bring clarification to complex topics such as “what is a feature?”.  </p>  
-
-<h3> Reviewing and Submission Policy</h3>
-
-<p>All submissions must be made <a href="https://openreview.net/group?id=ICML.cc/2024/Workshop/MI">via OpenReview</a>. Please use the <a href="https://media.icml.cc/Conferences/ICML2024/Styles/icml2024.zip">ICML 2024 LaTeX Template</a> for all submissions.</p>
-
-<p>Submissions are non-archival. We are happy to receive submissions that are also undergoing peer review elsewhere at the time of submission, but we will not accept submissions that have already been previously published or accepted for publication at peer-reviewed conferences or journals. Submission is permitted for papers presented or to be presented at other non-archival venues (e.g. other workshops) </p>
-
-<p>Reviewing for our workshop is double blind: reviewers will not know the authors’ identity (and vice versa). 
-Both short (max 4 page) and long (max 8 page) papers allow unlimited pages for references and appendices, but reviewers are not expected to read these.
-Evaluation of submissions will be based on the originality and novelty, the technical strength, and relevance to the workshop topics. Notifications of acceptance will be sent to applicants by email.
-<h3>Prizes</h3>
-<ul>
-<li>Best paper prize: $1000</li>
-<li>Second place: $500</li>
-<li>Third place: $250</li>
-<li>Honorable mentions: Up to 5, no cash prize</li>
-  
-</ul>
-
-      </section>
-      <section>
-        <h2>Important Dates</h2>
-        <ul>
-          <li><a href="https://openreview.net/group?id=ICML.cc/2024/Workshop/MI">Submission open on OpenReview</a>: May 12, 2024</li>
-          <li>Submission Deadline: May 29, 2024</li>
-          <li>Notification of Acceptance: June 23, 2024</li>
-          <li>Camera-ready Deadline: July 14th, 2024</li>
-          <li>Workshop Date: July 27, 2024 
-<!--             (tentative, may be moved to 26 pending ICML confirmation)</li> -->
-        </ul>
-        <p>All deadlines are 11:59PM UTC-12:00 (“anywhere on Earth”).</p>
-<p><b>Note:</b> You will require an OpenReview account to submit. If you do not have an institutional email (e.g. a .edu address), OpenReview moderation can take up to 2 weeks. <b>Please make an account by May 14th at the latest if this applies to you.</b><p>
-
-      </section>
-      <section>
-        <h2>Speakers</h2>
-        <div class="speakers">
-          <div class="speaker">
-            <img src="img/chrisolah.jpeg" alt="Speaker" />
-            <div>
-              <h3><a href="https://colah.github.io/about.html">Chris Olah</a></h3>
-              <p>Anthropic</p>
-            </div>
-          </div>
-          <div class="speaker">
-            <img src="img/jacobsteinhardt.png" alt="Speaker" />
-            <div>
-              <h3><a href="https://jsteinhardt.stat.berkeley.edu/">Jacob Steinhardt</a></h3>
-              <p>UC Berkeley</p>
-            </div>
-          </div>
-          <div class="speaker">
-            <img src="img/davidbau.jpeg" alt="Speaker" />
-            <div>
-              <h3><a href="https://www.khoury.northeastern.edu/people/david-bau/">David Bau</a></h3>
-              <p>Northeastern University</p>
-            </div>
-          </div>
-          <div class="speaker">
-            <img src="img/asmaghandeharioun.png" alt="Speaker" />
-            <div>
-              <h3><a href="https://asmadotgh.github.io/">Asma Ghandeharioun</a></h3>
-              <p>Google DeepMind</p>
-            </div>
+    <section>
+      <h2>Speakers</h2>
+      <div class="speakers">
+        <div class="speaker">
+          <img src="img/chrisolah.jpeg" alt="Speaker" />
+          <div>
+            <h3><a href="https://colah.github.io/about.html">Chris Olah</a></h3>
+            <p>Anthropic</p>
           </div>
         </div>
-      </section>
-      <section>
-        <h2>Panelists</h2>
-        <div class="speakers">
-          <div class="speaker">
-            <img src="img/naomisaphra.jpeg" alt="Speaker" />
-            <div>
-              <h3><a href="https://nsaphra.net/">Naomi Saphra</a></h3>
-              <p>Harvard University</p>
-            </div>
-          </div>
-          <div class="speaker">
-            <img src="img/atticusgeiger.jpeg" alt="Speaker" />
-            <div>
-              <h3><a href="https://atticusg.github.io/">Atticus Geiger</a></h3>
-              <p>Pr(Ai)<sup>2</sup>R Group</p>
-            </div>
-          </div>
-          <div class="speaker">
-            <img src="img/stellabiderman.jpeg" alt="Speaker" />
-            <div>
-              <h3><a href="https://www.stellabiderman.com">Stella Biderman</a></h3>
-              <p>EleutherAI</p>
-            </div>
+        <div class="speaker">
+          <img src="img/davidbau.jpeg" alt="Speaker" />
+          <div>
+            <h3><a href="https://www.khoury.northeastern.edu/people/david-bau/">David Bau</a></h3>
+            <p>Northeastern University</p>
           </div>
         </div>
-      </section>
+        <div class="speaker">
+          <img src="img/asmaghandeharioun.png" alt="Speaker" />
+          <div>
+            <h3><a href="https://asmadotgh.github.io/">Asma Ghandeharioun</a></h3>
+            <p>Google DeepMind</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <h2>Panelists</h2>
+      <div class="speakers">
+        <div class="speaker">
+          <img src="img/naomisaphra.jpeg" alt="Speaker" />
+          <div>
+            <h3><a href="https://nsaphra.net/">Naomi Saphra</a></h3>
+            <p>Harvard University</p>
+          </div>
+        </div>
+        <div class="speaker">
+          <img src="img/atticusgeiger.jpeg" alt="Speaker" />
+          <div>
+            <h3><a href="https://atticusg.github.io/">Atticus Geiger</a></h3>
+            <p>Pr(Ai)<sup>2</sup>R Group</p>
+          </div>
+        </div>
+        <div class="speaker">
+          <img src="img/stellabiderman.jpeg" alt="Speaker" />
+          <div>
+            <h3><a href="https://www.stellabiderman.com">Stella Biderman</a></h3>
+            <p>EleutherAI</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-      <section>
-        
+    <section>
+      <h2>Call for Papers</h2>
+      <p>We are inviting submissions of short (4 pages) and long (8 pages) papers outlining new research, with a
+        deadline of May 29th 2024. We welcome papers on any of the following topics (see the Topics for Discussion
+        section for more details and example papers), or anything else where the authors convincingly argue that it
+        moves forward the field of mechanistic interpretability.</p>
+      <ul>
+        <li><b>Techniques:</b> Work inventing new mechanistic interpretability techniques, evaluating the quality of
+          existing techniques, or proposing benchmarks and tools for future evaluations.</li>
+        <li><b>Exploratory analysis:</b>Qualitative, biologically-inspired analysis of components, circuits or phenomena
+          inside neural networks.</li>
+        <li><b>Decoding superposition:</b> Work that deepens our understanding of the hypothesis that models activations
+          are represented in superposition, and explores techniques to decode superposed activations, such as sparse
+          autoencoders. </li>
+        <li><b>Applications of interpretability:</b> Can we study jailbreaks/hallucinations/other interesting real-world
+          phenomena of LLMs? Where are places where mech interp provides value, in a fair comparison with e.g. linear
+          probing or finetuning baselines?</li>
+        <li><b>Scaling and automation:</b> How can we reduce the dependence of mechanistic interpretability on slow,
+          subjective and expensive human labor? How much do our current techniques scale?</li>
+        <li><b>Basic science:</b> There are many fundamental mysteries of model internals, and we welcome work that can
+          shed any light on them: Are activations sparse linear combinations of features? Are features universal? Are
+          circuits and features even the right way to think about models? </li>
+      </ul>
+      <p>We also welcome work that furthers the field of mechanistic interpretability in less standard ways, such as by
+        providing rigorous negative results, or open source software (e.g. <a
+          href="https://github.com/neelnanda-io/TransformerLens">TransformerLens</a>, <a
+          href="https://github.com/stanfordnlp/pyvene/tree/main">pyvene</a>, <a
+          href="https://github.com/ndif-team/nnsight">nnsight</a> or <a
+          href="https://github.com/google-deepmind/penzai">Penzai</a>), models or datasets that may be of value to the
+        community (e.g. <a href="https://arxiv.org/abs/2304.01373">Pythia</a>, <a
+          href="https://arxiv.org/abs/2106.16163">MultiBERTs</a> or <a
+          href="https://www.alignmentforum.org/posts/f9EgfLSurAiqRJySD/open-source-sparse-autoencoders-for-all-residual-stream">open
+          source sparse autoencoders</a>), coding tutorials (e.g. <a
+          href="https://arena3-chapter1-transformer-interp.streamlit.app/">the ARENA materials</a>), <a
+          href="https://distill.pub/2017/research-debt/">distillations of key and poorly explained concepts</a> (e.g. <a
+          href="https://transformer-circuits.pub/2021/framework/index.html">Elhage et al., 2021</a>), or position pieces
+        discussing future use cases of mechanistic interpretability or that bring clarification to complex topics such
+        as “what is a feature?”. </p>
+
+      <h3> Reviewing and Submission Policy</h3>
+
+      <p>All submissions must be made <a href="https://openreview.net/group?id=ICML.cc/2024/Workshop/MI">via
+          OpenReview</a>. Please use the <a href="https://media.icml.cc/Conferences/ICML2024/Styles/icml2024.zip">ICML
+          2024 LaTeX Template</a> for all submissions.</p>
+
+      <p>Submissions are non-archival. We are happy to receive submissions that are also undergoing peer review
+        elsewhere at the time of submission, but we will not accept submissions that have already been previously
+        published or accepted for publication at peer-reviewed conferences or journals. Submission is permitted for
+        papers presented or to be presented at other non-archival venues (e.g. other workshops) </p>
+
+      <p>Reviewing for our workshop is double blind: reviewers will not know the authors’ identity (and vice versa).
+        Both short (max 4 page) and long (max 8 page) papers allow unlimited pages for references and appendices, but
+        reviewers are not expected to read these.
+        Evaluation of submissions will be based on the originality and novelty, the technical strength, and relevance to
+        the workshop topics. Notifications of acceptance will be sent to applicants by email.
+      <h3>Prizes</h3>
+      <ul>
+        <li>Best paper prize: $1000</li>
+        <li>Second place: $500</li>
+        <li>Third place: $250</li>
+        <li>Honorable mentions: Up to 5, no cash prize</li>
+
+      </ul>
+
+    </section>
+    <section>
+      <h2>Important Dates</h2>
+      <ul>
+        <li><a href="https://openreview.net/group?id=ICML.cc/2024/Workshop/MI">Submission open on OpenReview</a>: May
+          12, 2024</li>
+        <li>Submission Deadline: May 29, 2024</li>
+        <li>Notification of Acceptance: June 23, 2024</li>
+        <li>Camera-ready Deadline: July 14th, 2024</li>
+        <li>Workshop Date: July 27, 2024
+          <!--             (tentative, may be moved to 26 pending ICML confirmation)</li> -->
+      </ul>
+      <p>All deadlines are 11:59PM UTC-12:00 (“anywhere on Earth”).</p>
+      <p><b>Note:</b> You will require an OpenReview account to submit. If you do not have an institutional email (e.g.
+        a .edu address), OpenReview moderation can take up to 2 weeks. <b>Please make an account by May 14th at the
+          latest if this applies to you.</b>
+      <p>
+
+    </section>
+
+
+    <section>
+
 
       <h2><strong>Potential topics of discussion include:</strong></h2>
 
 
-<ul>
+      <ul>
 
-<li>Many recent papers have suggested different metrics and techniques for validating mechanistic interpretations [<a href="https://distill.pub/2020/circuits">Cammarata et al., 2020</a>, <a href="https://arxiv.org/abs/2106.02997">Geiger et al., 2021</a>, <a href="https://arxiv.org/abs/2211.00593">Wang et al., 2022</a>, <a href="https://www.alignmentforum.org/posts/JvZhhzycHu2Yd57RN/causal-scrubbing-a-method-for-rigorously-testing">Chan et al., 2022</a>]. What are the advantages and disadvantages of these metrics, and which metrics should the field use going forward? How do we avoid spurious explanations or “interpretability illusions" [<a href="https://arxiv.org/abs/2104.07143">Bolukbasi et al., 2021</a>]? Are there unknown illusions for currently popular techniques?
+        <li>Many recent papers have suggested different metrics and techniques for validating mechanistic
+          interpretations [<a href="https://distill.pub/2020/circuits">Cammarata et al., 2020</a>, <a
+            href="https://arxiv.org/abs/2106.02997">Geiger et al., 2021</a>, <a
+            href="https://arxiv.org/abs/2211.00593">Wang et al., 2022</a>, <a
+            href="https://www.alignmentforum.org/posts/JvZhhzycHu2Yd57RN/causal-scrubbing-a-method-for-rigorously-testing">Chan
+            et al., 2022</a>]. What are the advantages and disadvantages of these metrics, and which metrics should the
+          field use going forward? How do we avoid spurious explanations or “interpretability illusions" [<a
+            href="https://arxiv.org/abs/2104.07143">Bolukbasi et al., 2021</a>]? Are there unknown illusions for
+          currently popular techniques?
 
-<li>Neural networks seem to represent more features in superposition [<a href="https://transformer-circuits.pub/2022/toy/_model/index.html">Elhage et al., 2022</a>, <a href="https://arxiv.org/abs/2305.01610">Gurnee et al., 2023</a>] than they have dimensions, which poses a significant challenge for identifying what features particular subcomponents are representing. How much of a challenge does superposition pose for various approaches to mechanistic interpretability? What are approaches that allow us to address or circumvent this challenge? We are particularly excited to see work building on recent successes using dictionary learning to address superposition, such as Sparse Autoencoders [<a href="https://transformer-circuits.pub/2023/monosemantic-features/index.html">Bricken et al., 2023</a>], including studying these dictionaries, using them for circuit analysis [<a href="https://arxiv.org/abs/2403.19647">Marks et al., 2024</a>], understanding reward models <a href="https://arxiv.org/pdf/2310.08164">[Marks et al., 2024]</a>, and developing better training methods.
+        <li>Neural networks seem to represent more features in superposition [<a
+            href="https://transformer-circuits.pub/2022/toy/_model/index.html">Elhage et al., 2022</a>, <a
+            href="https://arxiv.org/abs/2305.01610">Gurnee et al., 2023</a>] than they have dimensions, which poses a
+          significant challenge for identifying what features particular subcomponents are representing. How much of a
+          challenge does superposition pose for various approaches to mechanistic interpretability? What are approaches
+          that allow us to address or circumvent this challenge? We are particularly excited to see work building on
+          recent successes using dictionary learning to address superposition, such as Sparse Autoencoders [<a
+            href="https://transformer-circuits.pub/2023/monosemantic-features/index.html">Bricken et al., 2023</a>],
+          including studying these dictionaries, using them for circuit analysis [<a
+            href="https://arxiv.org/abs/2403.19647">Marks et al., 2024</a>], understanding reward models <a
+            href="https://arxiv.org/pdf/2310.08164">[Marks et al., 2024]</a>, and developing better training methods.
 
-<li>Techniques from mechanistic interpretability have been used to identify, edit, and control behavior inside of neural networks [<a href="https://arxiv.org/abs/2202.05262">Meng et al., 2022</a>, <a href="https://www.alignmentforum.org/posts/5spBue2z2tw4JuDCx/steering-gpt-2-xl-by-adding-an-activation-vector">Turner et al., 2023</a>]. However, other recent work has suggested that these model editing and pruning techniques often have unintended side effects, especially on larger models [<a href="https://arxiv.org/abs/2305.17553">Hoelscher-Obermaier et al., 2023</a>, <a href="https://arxiv.org/abs/2307.12976">Cohen et al. 2023</a>, <a href="https://arxiv.org/abs/2402.17700">Huang et al. 2024</a>, <a href="https://arxiv.org/pdf/2401.01814">Lo et al., 2024</a>]. How can we refine localization and editing and pruning behavior in more specific and scalable methods?
+        <li>Techniques from mechanistic interpretability have been used to identify, edit, and control behavior inside
+          of neural networks [<a href="https://arxiv.org/abs/2202.05262">Meng et al., 2022</a>, <a
+            href="https://www.alignmentforum.org/posts/5spBue2z2tw4JuDCx/steering-gpt-2-xl-by-adding-an-activation-vector">Turner
+            et al., 2023</a>]. However, other recent work has suggested that these model editing and pruning techniques
+          often have unintended side effects, especially on larger models [<a
+            href="https://arxiv.org/abs/2305.17553">Hoelscher-Obermaier et al., 2023</a>, <a
+            href="https://arxiv.org/abs/2307.12976">Cohen et al. 2023</a>, <a
+            href="https://arxiv.org/abs/2402.17700">Huang et al. 2024</a>, <a href="https://arxiv.org/pdf/2401.01814">Lo
+            et al., 2024</a>]. How can we refine localization and editing and pruning behavior in more specific and
+          scalable methods?
 
-<li>To understand what model activations and components do, it is crucial to have principled techniques, which ideally involve causally intervening on the model, or otherwise being faithful to the model's internal mechanisms. For example, a great deal of work has been done around activation patching, such as (distributed) interchange interventions [<a href="https://arxiv.org/abs/2004.12265">Vig et al. 2020</a>, <a href="https://proceedings.iclr.cc/paper/2021/hash/4f5c422f4d49a5a807eda27434231040-Abstract.html">Geiger et al., 2021, Geiger et al. 2024</a>], causal tracing [<a href="https://arxiv.org/abs/2202.05262">Meng et al., 2022</a>], path patching [<a href="https://arxiv.org/abs/2211.00593">Wang et al., 2022</a>, <a href="https://arxiv.org/abs/2304.05969">Goldowsky-Dill et al., 2023</a>], patchscopes [<a href="https://arxiv.org/abs/2401.06102">Ghandeharioun et al., 2024</a>] and causal scrubbing [<a href="https://www.alignmentforum.org/posts/JvZhhzycHu2Yd57RN/causal-scrubbing-a-method-for-rigorously-testing">Chan et al., 2022</a>].. What are the strengths and weaknesses of current techniques, when should or shouldn't they be applied, and how can they be refined? And can we find new techniques, capable of giving new insights?
+        <li>To understand what model activations and components do, it is crucial to have principled techniques, which
+          ideally involve causally intervening on the model, or otherwise being faithful to the model's internal
+          mechanisms. For example, a great deal of work has been done around activation patching, such as (distributed)
+          interchange interventions [<a href="https://arxiv.org/abs/2004.12265">Vig et al. 2020</a>, <a
+            href="https://proceedings.iclr.cc/paper/2021/hash/4f5c422f4d49a5a807eda27434231040-Abstract.html">Geiger et
+            al., 2021, Geiger et al. 2024</a>], causal tracing [<a href="https://arxiv.org/abs/2202.05262">Meng et al.,
+            2022</a>], path patching [<a href="https://arxiv.org/abs/2211.00593">Wang et al., 2022</a>, <a
+            href="https://arxiv.org/abs/2304.05969">Goldowsky-Dill et al., 2023</a>], patchscopes [<a
+            href="https://arxiv.org/abs/2401.06102">Ghandeharioun et al., 2024</a>] and causal scrubbing [<a
+            href="https://www.alignmentforum.org/posts/JvZhhzycHu2Yd57RN/causal-scrubbing-a-method-for-rigorously-testing">Chan
+            et al., 2022</a>].. What are the strengths and weaknesses of current techniques, when should or shouldn't
+          they be applied, and how can they be refined? And can we find new techniques, capable of giving new insights?
 
-<li>Many approaches for generating mechanistic explanations are very labor intensive, leading to interest in automated and scalable mechanistic interpretability [<a href="https://arxiv.org/abs/2304.12918">Foote et al., 2023</a>, <a href="https://openaipublic.blob.core.windows.net/neuron-explainer/paper/index.html">Bills et al., 2023</a>, <a href="https://arxiv.org/abs/2304.14997">Conmy et al., 2023</a>, <a href="https://arxiv.org/abs/2403.00745">Kramar et al., 2024</a>, <a href="https://arxiv.org/abs/2305.08809">Wu et al.2024</a>]. How can we develop more scalable, efficient techniques for interpreting ever larger and more complicated models? How do interpretability properties change with model scale, and what will it take for the field to be able to keep up with frontier foundation models?
+        <li>Many approaches for generating mechanistic explanations are very labor intensive, leading to interest in
+          automated and scalable mechanistic interpretability [<a href="https://arxiv.org/abs/2304.12918">Foote et al.,
+            2023</a>, <a href="https://openaipublic.blob.core.windows.net/neuron-explainer/paper/index.html">Bills et
+            al., 2023</a>, <a href="https://arxiv.org/abs/2304.14997">Conmy et al., 2023</a>, <a
+            href="https://arxiv.org/abs/2403.00745">Kramar et al., 2024</a>, <a
+            href="https://arxiv.org/abs/2305.08809">Wu et al.2024</a>]. How can we develop more scalable, efficient
+          techniques for interpreting ever larger and more complicated models? How do interpretability properties change
+          with model scale, and what will it take for the field to be able to keep up with frontier foundation models?
 
-<li>Models are complex, high-dimensional objects, and significant insights can be gained from more qualitative, biological-style analysis, such as studying individual neurons [<a href="https://distill.pub/2021/multimodal-neurons/">Goh et al., 2021</a>, <a href="https://arxiv.org/abs/2401.12181">Gurnee et al., 2024</a>], Sparse Autoencoder features [<a href="https://arxiv.org/abs/2309.08600">Cunningham et al. 2023</a>, <a href="https://transformer-circuits.pub/2023/monosemantic-features/index.html">Bricken et al., 2023</a>], attention heads [<a href="https://arxiv.org/abs/2310.04625">McDougall et al., 2023</a>, <a href="https://arxiv.org/abs/2312.09230">Gould et al., 2023</a>], or specific circuits [<a href="https://transformer-circuits.pub/2022/in-context-learning-and-induction-heads/index.html">Olsson et al., 2022</a>, <a href="https://arxiv.org/abs/2211.00593">Wang et al., 2022</a>, <a href="https://arxiv.org/abs/2307.09458">Lieberum et al., 2023</a>]. What more can we learn from such analyses? How can we ensure they’re kept to a high standard of rigor, and what mistakes have been made in past work?
+        <li>Models are complex, high-dimensional objects, and significant insights can be gained from more qualitative,
+          biological-style analysis, such as studying individual neurons [<a
+            href="https://distill.pub/2021/multimodal-neurons/">Goh et al., 2021</a>, <a
+            href="https://arxiv.org/abs/2401.12181">Gurnee et al., 2024</a>], Sparse Autoencoder features [<a
+            href="https://arxiv.org/abs/2309.08600">Cunningham et al. 2023</a>, <a
+            href="https://transformer-circuits.pub/2023/monosemantic-features/index.html">Bricken et al., 2023</a>],
+          attention heads [<a href="https://arxiv.org/abs/2310.04625">McDougall et al., 2023</a>, <a
+            href="https://arxiv.org/abs/2312.09230">Gould et al., 2023</a>], or specific circuits [<a
+            href="https://transformer-circuits.pub/2022/in-context-learning-and-induction-heads/index.html">Olsson et
+            al., 2022</a>, <a href="https://arxiv.org/abs/2211.00593">Wang et al., 2022</a>, <a
+            href="https://arxiv.org/abs/2307.09458">Lieberum et al., 2023</a>]. What more can we learn from such
+          analyses? How can we ensure they’re kept to a high standard of rigor, and what mistakes have been made in past
+          work?
 
-<li>Mechanistic interpretability is sometimes criticized for a focus on cherry-picked, toy tasks. Can we validate that our understanding is correct by doing something useful with interpretability on a real world task, such as reducing sycophancy [<a href="https://www.lesswrong.com/posts/zt6hRsDE84HeBKh7E/reducing-sycophancy-and-improving-honesty-via-activation">Rimsky 2023</a>] or preventing jailbreaks [<a href="https://arxiv.org/abs/2401.18018">Zheng et al., 2024</a>]? In particular, can we find cases where mechanistic interpretability wins in a “fair fight”, and beats strong non-mechanistic baselines such as representation engineering [<a href="https://arxiv.org/abs/2310.01405">Zou et al., 2023</a>] or fine-tuning?
+        <li>Mechanistic interpretability is sometimes criticized for a focus on cherry-picked, toy tasks. Can we
+          validate that our understanding is correct by doing something useful with interpretability on a real world
+          task, such as reducing sycophancy [<a
+            href="https://www.lesswrong.com/posts/zt6hRsDE84HeBKh7E/reducing-sycophancy-and-improving-honesty-via-activation">Rimsky
+            2023</a>] or preventing jailbreaks [<a href="https://arxiv.org/abs/2401.18018">Zheng et al., 2024</a>]? In
+          particular, can we find cases where mechanistic interpretability wins in a “fair fight”, and beats strong
+          non-mechanistic baselines such as representation engineering [<a href="https://arxiv.org/abs/2310.01405">Zou
+            et al., 2023</a>] or fine-tuning?
 
-<li>There are many mysteries in the basic science of model internals: how and whether they use superposition [<a href="https://transformer-circuits.pub/2022/toy_model/index.html">Elhage et al., 2023</a>], whether the linear representation hypothesis [<a href="https://arxiv.org/abs/2311.03658">Park et al., 2023</a>] is true, if features are universal [<a href="https://distill.pub/2020/circuits/zoom-in/">Olah et al., 2020</a>], what fine-tuning does to a model [<a href="https://finetuning.baulab.info/">Prakash et al., 2024</a>], and many more. What are the biggest remaining open problems, and how can we make progress on them?
+        <li>There are many mysteries in the basic science of model internals: how and whether they use superposition [<a
+            href="https://transformer-circuits.pub/2022/toy_model/index.html">Elhage et al., 2023</a>], whether the
+          linear representation hypothesis [<a href="https://arxiv.org/abs/2311.03658">Park et al., 2023</a>] is true,
+          if features are universal [<a href="https://distill.pub/2020/circuits/zoom-in/">Olah et al., 2020</a>], what
+          fine-tuning does to a model [<a href="https://finetuning.baulab.info/">Prakash et al., 2024</a>], and many
+          more. What are the biggest remaining open problems, and how can we make progress on them?
 
-<li>Much current mechanistic interpretability work focuses on LLMs. How well does this generalize to other areas and modalities, such as vision [<a href="https://distill.pub/2020/circuits/curve-circuits/">Cammarata et al., 2021</a>], audio, video, protein folding, or reinforcement learning [<a href="https://distill.pub/2020/understanding-rl-vision">Hilton et al., 2020</a>]? What can mechanistic interpretability learn from related fields, such as neuroscience and the study of biology circuits, and does mechanistic interpretability have any insights to be shared there?
+        <li>Much current mechanistic interpretability work focuses on LLMs. How well does this generalize to other areas
+          and modalities, such as vision [<a href="https://distill.pub/2020/circuits/curve-circuits/">Cammarata et al.,
+            2021</a>], audio, video, protein folding, or reinforcement learning [<a
+            href="https://distill.pub/2020/understanding-rl-vision">Hilton et al., 2020</a>]? What can mechanistic
+          interpretability learn from related fields, such as neuroscience and the study of biology circuits, and does
+          mechanistic interpretability have any insights to be shared there?
 
-<li>A significant contributor to the rapid growth of the field is the availability of introductory materials [<a href="https://neelnanda.io/glossary">Nanda 2022</a>], beginner-friendly coding tutorials on key techniques [<a href="https://arena3-chapter1-transformer-interp.streamlit.app/">McDougall 2023</a>], open-sourced code and easy-to-use software packages (for example, <a href="https://github.com/neelnanda-io/TransformerLens">Nanda and Bloom [2022]</a> or <a href="https://github.com/ndif-team/nnsight">Fiotto-Kaufman [2023]</a>), which makes it easier for new researchers to begin to contribute to the field. How can the field continue to foster this beginner-friendly environment going forward?
+        <li>A significant contributor to the rapid growth of the field is the availability of introductory materials [<a
+            href="https://neelnanda.io/glossary">Nanda 2022</a>], beginner-friendly coding tutorials on key techniques
+          [<a href="https://arena3-chapter1-transformer-interp.streamlit.app/">McDougall 2023</a>], open-sourced code
+          and easy-to-use software packages (for example, <a
+            href="https://github.com/neelnanda-io/TransformerLens">Nanda and Bloom [2022]</a> or <a
+            href="https://github.com/ndif-team/nnsight">Fiotto-Kaufman [2023]</a>), which makes it easier for new
+          researchers to begin to contribute to the field. How can the field continue to foster this beginner-friendly
+          environment going forward?
 
-<li>Mechanistic interpretability is sometimes analogized to the neuroscience of machine learning models. Multimodal neurons were found in biological networks [<a href="http://amygdala.psychdept.arizona.edu/IntroData/Readings/week5/Quiroga-reddy-kreiman-koch-Fried+invariant-visual-single-neurons-human+Nature+2005.pdf">Quiroga et al., 2005</a>] and then artificial ones [<a href="https://distill.pub/2021/multimodal-neurons/">Goh et al., 2021</a>], and high-low frequency detectors were found in artificial networks [<a href="https://distill.pub/2020/circuits/frequency-edges/#:~:text=A%20family%20of%20early%2Dvision,high%20to%20low%20spatial%20frequency.">Schubert et al., 2021</a>] then biological ones [<a href="https://www.biorxiv.org/content/10.1101/2023.03.15.532836v1">Ding et al., 2023</a>]. How tight is this analogy, and what can the two fields learn from each other?
-</li>
-</ul>
-<p>
-Besides panel discussions, invited talks, and a poster session, we also plan on running a hands-on tutorial exploring newer results in the field using <a href="https://github.com/neelnanda-io/TransformerLens">Nanda and Bloom [2022]'s</a> TransformerLens package.
-</p>
-      </section>
+        <li>Mechanistic interpretability is sometimes analogized to the neuroscience of machine learning models.
+          Multimodal neurons were found in biological networks [<a
+            href="http://amygdala.psychdept.arizona.edu/IntroData/Readings/week5/Quiroga-reddy-kreiman-koch-Fried+invariant-visual-single-neurons-human+Nature+2005.pdf">Quiroga
+            et al., 2005</a>] and then artificial ones [<a href="https://distill.pub/2021/multimodal-neurons/">Goh et
+            al., 2021</a>], and high-low frequency detectors were found in artificial networks [<a
+            href="https://distill.pub/2020/circuits/frequency-edges/#:~:text=A%20family%20of%20early%2Dvision,high%20to%20low%20spatial%20frequency.">Schubert
+            et al., 2021</a>] then biological ones [<a
+            href="https://www.biorxiv.org/content/10.1101/2023.03.15.532836v1">Ding et al., 2023</a>]. How tight is this
+          analogy, and what can the two fields learn from each other?
+        </li>
+      </ul>
+      <p>
+        Besides panel discussions, invited talks, and a poster session, we also plan on running a hands-on tutorial
+        exploring newer results in the field using <a href="https://github.com/neelnanda-io/TransformerLens">Nanda and
+          Bloom [2022]'s</a> TransformerLens package.
+      </p>
+    </section>
 
-      <section>
-        <h2>Organizing Committee</h2>
-        <div class="organizers">
-          <div class="Organizer">
-            <img src="img/fazlbarez.jpeg" alt="Speaker" />
-            <div>
-              <h3><a href="https://fbarez.github.io/">Fazl Barez</a></h3>
-              <p>Research Fellow University of Oxford</p>
-            </div>
-          </div>
-          <div class="Organizer">
-            <img src="img/morgeva.jpeg" alt="Organizer" />
-            <div>
-              <h3><a href="https://mega002.github.io/">Mor Geva</a></h3>
-              <p>Ass. Prof Tel Aviv University, Visiting Researcher Google Research</p>
-            </div>
-          </div>
-          <div class="Organizer">
-            <img src="img/lawrencechan.jpeg" alt="Organizer" />
-            <div>
-              <h3><a href="https://chanlawrence.me/">Lawrence Chan</a></h3>
-              <p>PhD student UC Berkeley</p>
-            </div>
-          </div>
-          <div class="Organizer">
-            <img src="img/kayoyin.jpeg" alt="Organizer" />
-            <div>
-              <h3><a href="https://kayoyin.github.io/">Kayo Yin</a></h3>
-              <p>PhD student UC Berkeley</p>
-            </div>
-          </div>
-          <div class="Organizer">
-            <img src="img/neelnanda.jpeg" alt="Organizer" />
-            <div>
-              <h3><a href="https://www.neelnanda.io/about">Neel Nanda</a></h3>
-              <p>Research Engineer Google DeepMind</p>
-            </div>
-            </div>
-            <div class="Organizer">
-              <img src="img/maxtegmark.webp" alt="Organizer" />
-              <div>
-                <h3><a href="https://physics.mit.edu/faculty/max-tegmark/">Max Tegmark</a></h3>
-                <p>Professor MIT</p>
-              </div>
-            </div>
+    <section>
+      <h2>Organizing Committee</h2>
+      <div class="organizers">
+        <div class="Organizer">
+          <img src="img/fazlbarez.jpeg" alt="Speaker" />
+          <div>
+            <h3><a href="https://fbarez.github.io/">Fazl Barez</a></h3>
+            <p>Research Fellow University of Oxford</p>
           </div>
         </div>
-      </section>
-      <section>
-        <h2>Contact</h2>
-        <p>
-          <!-- Emails fazl@apartresearch.com -->
-          Email: <a href="mailto:icml2024mi@gmail.com">icml2024mi@gmail.com</a></p>
-    </main>
-  </body>
+        <div class="Organizer">
+          <img src="img/morgeva.jpeg" alt="Organizer" />
+          <div>
+            <h3><a href="https://mega002.github.io/">Mor Geva</a></h3>
+            <p>Ass. Prof Tel Aviv University, Visiting Researcher Google Research</p>
+          </div>
+        </div>
+        <div class="Organizer">
+          <img src="img/lawrencechan.jpeg" alt="Organizer" />
+          <div>
+            <h3><a href="https://chanlawrence.me/">Lawrence Chan</a></h3>
+            <p>PhD student UC Berkeley</p>
+          </div>
+        </div>
+        <div class="Organizer">
+          <img src="img/kayoyin.jpeg" alt="Organizer" />
+          <div>
+            <h3><a href="https://kayoyin.github.io/">Kayo Yin</a></h3>
+            <p>PhD student UC Berkeley</p>
+          </div>
+        </div>
+        <div class="Organizer">
+          <img src="img/neelnanda.jpeg" alt="Organizer" />
+          <div>
+            <h3><a href="https://www.neelnanda.io/about">Neel Nanda</a></h3>
+            <p>Research Engineer Google DeepMind</p>
+          </div>
+        </div>
+        <div class="Organizer">
+          <img src="img/maxtegmark.webp" alt="Organizer" />
+          <div>
+            <h3><a href="https://physics.mit.edu/faculty/max-tegmark/">Max Tegmark</a></h3>
+            <p>Professor MIT</p>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+    <section>
+      <h2>Contact</h2>
+      <p>
+        <!-- Emails fazl@apartresearch.com -->
+        Email: <a href="mailto:icml2024mi@gmail.com">icml2024mi@gmail.com</a>
+      </p>
+  </main>
+</body>
+
 </html>
